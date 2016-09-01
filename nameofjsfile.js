@@ -1,6 +1,5 @@
 function init(){
   var h1tags = document.getElementsByTagName("h1");
-  console.log(h1tags);
   h1tags[0].onclick = changeColor;
 }
 
