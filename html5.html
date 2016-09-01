@@ -1,24 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="3; url=redirect.html">
-  <!-- description should include > 200 characters -->
-  <meta name="description" content="this is the description of my static page" />
-  <!-- keywords should include >1000 characters -->
-  <meta name="keywords" content="html5 canvas, html5 tutorial, html5 doctype" />
-  <!-- index, unlike noindex means that search engine robots should index the page while "follow" means that further sublinks should be indexed as well -->
-  <meta name="robots" content="index,follow" />
-  <!-- scripts should follow here? -->
-  <script src="nameofjsfile.js"></script>
-  <!-- define location for all links for this page BEFORE defining other links -->
-  <base href="http://localhost/html/">
-  <link rel="stylesheet" href="style.css">
-  <!-- the icon should be 16 x 16 pixels -->
-  <link rel="icon" href="favicon.ico">
-  <title>HTML 5 Tutorial</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="refresh" content="3; url=redirect.html"> -->
+    <!-- description should include > 200 characters -->
+    <meta name="description" content="this is the description of my static page" />
+    <!-- keywords should include >1000 characters -->
+    <meta name="keywords" content="html5 canvas, html5 tutorial, html5 doctype" />
+    <!-- index, unlike noindex means that search engine robots should index the page while "follow" means that further sublinks should be indexed as well -->
+    <meta name="robots" content="index,follow" />
+    <!-- scripts should follow here? -->
 
-</body>
+    <!-- define location for all links for this page BEFORE defining other links -->
+    <!-- <base href="http://localhost/html5_tutorial/"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- the icon should be 16 x 16 pixels -->
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <title>HTML 5 Tutorial</title>
+  </head>
+  <body>
+
+  <!-- divs should be used for styling and not for structural reasons -->
+    <div class="wrapper">
+    <!-- the noscript tag is to remmind the user to enable js otherwise the internet in empty -->
+      <noscript>Please enable JavaScript in your browser in order to have a complete experience on our website.</noscript>
+      <!-- let's not forget that the h tags are to scale the importance of the line, you can change the styling -->
+      <h1 id="change_color">This is an h1 line and you can change its color with a click</h1>
+      <p>Fingerstache single-origin coffee +1 beard, lumbersexual pabst asymmetrical flexitarian VHS sartorial. Salvia banjo fixie street art, letterpress biodiesel typewriter kinfolk austin sriracha. Skateboard taxidermy forage chillwave cronut. Kitsch readymade photo booth, 3 wolf moon seitan shoreditch typewriter vegan celiac mlkshk hella bespoke fashion axe cray. Readymade skateboard +1, cornhole brunch farm-to-table DIY gentrify master cleanse affogato shabby chic kale chips lumbersexual blue bottle.</p>
+      <hr>
+      <!-- blockquotes are used for indentation and have their additional options -->
+      <blockquote cite="http://hipsum.co/?paras=4&type=hipster-centric">Kickstarter meditation lumbersexual craft beer ugh humblebrag truffaut hoodie kale chips, kinfolk master cleanse cardigan butcher tumblr. Pour-over hoodie actually typewriter, taxidermy meditation freegan chia pop-up.</blockquote>
+      <!-- quote using just the q tag only adds the quotation marks -->
+      <q cite="http://hipsum.co/?paras=4&type=hipster-centric">Kickstarter meditation lumbersexual craft beer ugh humblebrag truffaut hoodie kale chips, kinfolk master cleanse cardigan butcher tumblr. Pour-over hoodie actually typewriter, taxidermy meditation freegan chia pop-up.</q>
+      <!-- pasting information and keeping the white space inside of it - GREAT FOR CODE -->
+      <pre>
+                                      FAMOUS STEALTH AIRCRAFT
+
+                                 /\                |                         |
+                                 \ \               |                         |
+                                  \ \              |                         |
+                                   \ \             |            /\           |
+                                   /  \            |           /&lt;&gt;\          |
+                                  /    \           |          /=  =\         |
+                                  \ &gt; { \          |         /      \        |
+                                  /    b \         |        / /\  /\ \       |
+                                  \    p /         |       / /  \/  \ \      |
+                                  / &gt; { /          |       \/   /\   \/      |
+                                  \    /           |                         |
+                                   \  /            |                         |
+                                   / /             |                         |
+                                  / /              |                         |
+                                 / /               |                         |
+                                 \/                |                         |
+
+                                   cute B-2                    F-117                   
+      </pre>
+      <pre>
+        <code>
+          var request = require("request");
+          var url = require("url");
+
+          app.get("twwts/:username", function(request, response){
+            var username = require.params.username;
+            options = {
+              protocol: "http:",
+              host: "api.twitter.com",
+              pathname: "/1/statuses/user_timeline.json",
+              query: {screen_name: username, count: 10}
+            }
+            var twitter_url = url.format(options);
+            request(twitterUrl).pipe(response);
+          });
+        </code>
+      </pre>
+    </div>
+  <script src='nameofjsfile.js'></script>
+  </body>
 </html>
