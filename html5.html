@@ -167,7 +167,42 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/kDyJN7qQETA" frameborder="0" allowfullscreen></iframe>
       <section>
         <h2>Forms in HTML 5</h2>
-        <form method="GET" action="phpscript.php"></form>
+        <form method="GET" action="phpscript.php">
+          Your name: <input type="text" name="name" size="50" maxlength="50"><br>
+          Your password: <input type="password" name="password"> <br>
+          <input type="hidden" name="browser">
+          <input type="file" name="upload">
+          <input type="image" alt="logo" src="">
+          Your history: <br>
+          <textarea name="history" rows="20" cols="50"> this is text area tag</textarea>
+          <fieldset>
+            <legend>this is legend tag for fieldset w checkboxes</legend>
+            Programming<input type="checkbox" name="programmingCB" value="Programming">
+            Running<input type="checkbox" name="runningCB" value="Running">
+          </fieldset>
+          <fieldset>
+            <legend>this is legend tag for fieldset w radio btns</legend>
+            Programming<input type="radio" name="hobbies" value="ProgrammingR">
+            Running<input type="radio" name="hobbies" value="RunningR">
+          </fieldset>
+          <select name="favNum">
+            <option value="PI">PI (3.14)</option>
+            <option value="Eulers">Euler's number (2.718)</option>
+            <option value="GoldenRatio">Golden Ratio</option>
+          </select>
+          <select name="favHero">
+            <optgroup label="Marvel">
+              <option value="spiderman">Spiderman</option>
+              <option value="wolverine">Wolverine</option>
+            </optgroup>
+            <optgroup label="DC">
+              <option value="flash">Flash</option>
+              <option value="batman">Batman</option>
+            </optgroup>
+          </select>
+          <input type="submit" name="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </form>
       </section>
     </main>
     <footer>
