@@ -10,92 +10,171 @@
     <!-- index, unlike noindex means that search engine robots should index the page while "follow" means that further sublinks should be indexed as well -->
     <meta name="robots" content="index,follow" />
     <!-- scripts should follow here? -->
-
     <!-- define location for all links for this page BEFORE defining other links -->
     <!-- <base href="http://localhost/html5_tutorial/"> -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="style.css" rel="stylesheet">
     <!-- the icon should be 16 x 16 pixels -->
-    <!-- <link rel="icon" href="favicon.ico"> -->
+    <link rel="icon" href="favicon.ico">
     <title>HTML 5 Tutorial</title>
   </head>
   <body>
+    <nav id="horzNav">
+      <p>
+        <a href="http://youtube.com">Youtube</a>
+        <a href="http://google.com">Google</a>
+        <a href="http://yahoo.com">Yahoo</a>
+      </p>
+    </nav>
+    <main id="content">
+      <section>
+        <h2>Fun fact</h2>
+        <article>
+          <h3>Tomato fact</h3>
+          <p>Fingerstache single-origin coffee +1 beard, lumbersexual pabst asymmetrical flexitarian VHS sartorial. Salvia banjo fixie street art, letterpress biodiesel typewriter kinfolk austin sriracha. Skateboard taxidermy forage chillwave cronut. Kitsch readymade photo booth, 3 wolf moon seitan shoreditch typewriter vegan celiac mlkshk hella bespoke fashion axe cray. Readymade skateboard +1, cornhole brunch farm-to-table DIY gentrify master cleanse affogato shabby chic kale chips lumbersexual blue bottle.</p>
+          <aside>this is the aside section from the article tag</aside>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Types of lists</h2>
+          <ul>This is unordered</ul>
+          <ul id="favic">
+            <li>Ordered</li>
+            <li>Unordered</li>
+            <li>Definition</li>
+          </ul>
+          <ol>This is ordered</ol>
+          <ol>
+            <li>
+              Ordered list one
+              <ol>
+                <li>
+                  This is the second ordered list
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section>
+        <h2>This is definition list with &lt;dd&gt; tags below</h2>
+        <dl>
+          dl, don't know what it does
+          <dt>&lt;dt&gt; tag
+            <dfn>the &lt;dfn&gt; it makes the text italic</dfn>
+          </dt>
+          <dd>this is the &lt;dd&gt; tag, it should contain the definiton's text and it indents it</dd>
+        </dl>
+        <article>
+          <h2>Tables</h2>
+          <table id="tableData">
+            <caption>this is the caption tag</caption>
+            <thead>
+              <tr>
+                <td colspan="3">this is table head with 3 colspan</td>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td colspan="3">this is table footer with 3 colspan</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>This is the &lt;tbody&gt; tag</td>
+                <td>which is supposed to come after the &lt;tfoot&gt; tag</td>
+                <td>IF you decide to use it - but gets displayed properly :)</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <!-- divs should be used for styling and not for structural reasons -->
+      <div class="wrapper">
+        <p><a href="html5.html#pageBottom">go to page bottom</a></p>
+        <!-- the noscript tag is to remmind the user to enable js otherwise the internet in empty -->
+        <noscript>Please enable JavaScript in your browser in order to have a complete experience on our website.</noscript>
+        <!-- let's not forget that the h tags are to scale the importance of the line, you can change the styling -->
+        <h1 id="change_color">This is an h1 line and you can change its color with a click</h1>
+        <p>Fingerstache single-origin coffee +1 beard, lumbersexual pabst asymmetrical flexitarian VHS sartorial. Salvia banjo fixie street art, letterpress biodiesel typewriter kinfolk austin sriracha. Skateboard taxidermy forage chillwave cronut. Kitsch readymade photo booth, 3 wolf moon seitan shoreditch typewriter vegan celiac mlkshk hella bespoke fashion axe cray. Readymade skateboard +1, cornhole brunch farm-to-table DIY gentrify master cleanse affogato shabby chic kale chips lumbersexual blue bottle.</p>
+        <hr>
+        <!-- blockquotes are used for indentation and have their additional options -->
+        <blockquote cite="http://hipsum.co/?paras=4&type=hipster-centric">Kickstarter meditation lumbersexual craft beer ugh humblebrag truffaut hoodie kale chips, kinfolk master cleanse cardigan butcher tumblr. Pour-over hoodie actually typewriter, taxidermy meditation freegan chia pop-up.</blockquote>
+        <!-- quote using just the q tag only adds the quotation marks -->
+        <q cite="http://hipsum.co/?paras=4&type=hipster-centric">Kickstarter meditation lumbersexual craft beer ugh humblebrag truffaut hoodie kale chips, kinfolk master cleanse cardigan butcher tumblr. Pour-over hoodie actually typewriter, taxidermy meditation freegan chia pop-up.</q>
+        <!-- pasting information and keeping the white space inside of it - GREAT FOR CODE -->
+        <pre>
+                                        FAMOUS STEALTH AIRCRAFT
 
-  <!-- divs should be used for styling and not for structural reasons -->
-    <div class="wrapper">
-    <p><a href="html5.html#pageBottom">go to page bottom</a></p>
-    <!-- the noscript tag is to remmind the user to enable js otherwise the internet in empty -->
-      <noscript>Please enable JavaScript in your browser in order to have a complete experience on our website.</noscript>
-      <!-- let's not forget that the h tags are to scale the importance of the line, you can change the styling -->
-      <h1 id="change_color">This is an h1 line and you can change its color with a click</h1>
-      <p>Fingerstache single-origin coffee +1 beard, lumbersexual pabst asymmetrical flexitarian VHS sartorial. Salvia banjo fixie street art, letterpress biodiesel typewriter kinfolk austin sriracha. Skateboard taxidermy forage chillwave cronut. Kitsch readymade photo booth, 3 wolf moon seitan shoreditch typewriter vegan celiac mlkshk hella bespoke fashion axe cray. Readymade skateboard +1, cornhole brunch farm-to-table DIY gentrify master cleanse affogato shabby chic kale chips lumbersexual blue bottle.</p>
-      <hr>
-      <!-- blockquotes are used for indentation and have their additional options -->
-      <blockquote cite="http://hipsum.co/?paras=4&type=hipster-centric">Kickstarter meditation lumbersexual craft beer ugh humblebrag truffaut hoodie kale chips, kinfolk master cleanse cardigan butcher tumblr. Pour-over hoodie actually typewriter, taxidermy meditation freegan chia pop-up.</blockquote>
-      <!-- quote using just the q tag only adds the quotation marks -->
-      <q cite="http://hipsum.co/?paras=4&type=hipster-centric">Kickstarter meditation lumbersexual craft beer ugh humblebrag truffaut hoodie kale chips, kinfolk master cleanse cardigan butcher tumblr. Pour-over hoodie actually typewriter, taxidermy meditation freegan chia pop-up.</q>
-      <!-- pasting information and keeping the white space inside of it - GREAT FOR CODE -->
-      <pre>
-                                      FAMOUS STEALTH AIRCRAFT
+                                   /\                |                         |
+                                   \ \               |                         |
+                                    \ \              |                         |
+                                     \ \             |            /\           |
+                                     /  \            |           /&lt;&gt;\          |
+                                    /    \           |          /=  =\         |
+                                    \ &gt; { \          |         /      \        |
+                                    /    b \         |        / /\  /\ \       |
+                                    \    p /         |       / /  \/  \ \      |
+                                    / &gt; { /          |       \/   /\   \/      |
+                                    \    /           |                         |
+                                     \  /            |                         |
+                                     / /             |                         |
+                                    / /              |                         |
+                                   / /               |                         |
+                                   \/                |                         |
 
-                                 /\                |                         |
-                                 \ \               |                         |
-                                  \ \              |                         |
-                                   \ \             |            /\           |
-                                   /  \            |           /&lt;&gt;\          |
-                                  /    \           |          /=  =\         |
-                                  \ &gt; { \          |         /      \        |
-                                  /    b \         |        / /\  /\ \       |
-                                  \    p /         |       / /  \/  \ \      |
-                                  / &gt; { /          |       \/   /\   \/      |
-                                  \    /           |                         |
-                                   \  /            |                         |
-                                   / /             |                         |
-                                  / /              |                         |
-                                 / /               |                         |
-                                 \/                |                         |
+                                     cute B-2                    F-117                   
+        </pre>
+        <pre>
+          <code>
+            var request = require("request");
+            var url = require("url");
 
-                                   cute B-2                    F-117                   
-      </pre>
-      <pre>
-        <code>
-          var request = require("request");
-          var url = require("url");
-
-          app.get("twwts/:username", function(request, response){
-            var username = require.params.username;
-            options = {
-              protocol: "http:",
-              host: "api.twitter.com",
-              pathname: "/1/statuses/user_timeline.json",
-              query: {screen_name: username, count: 10}
-            }
-            var twitter_url = url.format(options);
-            request(twitterUrl).pipe(response);
-          });
-        </code>
-      </pre>
-      <div id="pageBottom">
-        <img id="eyeImg" src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/5718897981_10faa45ac3_b-640x624.jpg" height="640" width="624" alt="Nice eye">
-        <p><a href="javascript:toggleImg()">toggle pic</a></p>
+            app.get("twwts/:username", function(request, response){
+              var username = require.params.username;
+              options = {
+                protocol: "http:",
+                host: "api.twitter.com",
+                pathname: "/1/statuses/user_timeline.json",
+                query: {screen_name: username, count: 10}
+              }
+              var twitter_url = url.format(options);
+              request(twitterUrl).pipe(response);
+            });
+          </code>
+        </pre>
+        <div id="pageBottom">
+          <img id="eyeImg" src="http://cdn.arstechnica.net/wp-content/uploads/2016/02/5718897981_10faa45ac3_b-640x624.jpg" height="640" width="624" alt="Nice eye">
+          <p><a href="javascript:toggleImg()">toggle pic</a></p>
+        </div>
       </div>
-    </div>
-    <p><b>the b tag bolds the text</b></p>
-    <p><strong>the strong tag bolds the text</strong></p>
-    <p><em>the em tag italicisises the text</em></p>
-    <p><i>the i teg does the same</i></p>
-    <p><samp>Sample tag - sample programming output</samp></p>
-    <p><del>delete</del></p>
-    <p><ins>Insert</ins></p>
-    <p><small>Small</small></p>
-    <p>This is abbreviation <abbr title="abbreviation">abbr.</abbr></p>
-    <p><dfn>Deffinition:</dfn> this is the deffinition</p>
-    <p><dfn title="this is the deffinition">Deffinition</dfn></p>
-    <p>4<sup>2</sup> - example for using superscript</p>
-    <p>CO<sub>2</sub> - example for using subscript</p>
-    <p><ruby>Japanese Character here <rt>hanten</rt></ruby> - example for using ruby tag</p>
-    <object data="http://www.orimi.com/pdf-test.pdf" type="application/pdf" width="750" height="400"></object>
-    <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/kDyJN7qQETA" frameborder="0" allowfullscreen></iframe>
-  <script src='nameofjsfile.js'></script>
+      <p><b>the b tag bolds the text</b></p>
+      <p><strong>the strong tag bolds the text</strong></p>
+      <p><em>the em tag italicisises the text</em></p>
+      <p><i>the i teg does the same</i></p>
+      <p><samp>Sample tag - sample programming output</samp></p>
+      <p><del>delete</del></p>
+      <p><ins>Insert</ins></p>
+      <p><small>Small</small></p>
+      <p>This is abbreviation <abbr title="abbreviation">abbr.</abbr></p>
+      <p><dfn>Deffinition:</dfn> this is the deffinition</p>
+      <p><dfn title="this is the deffinition">Deffinition</dfn></p>
+      <p>4<sup>2</sup> - example for using superscript</p>
+      <p>CO<sub>2</sub> - example for using subscript</p>
+      <p><ruby>Japanese Character here <rt>hanten</rt></ruby> - example for using ruby tag</p>
+      <object data="http://www.orimi.com/pdf-test.pdf" type="application/pdf" width="750" height="400"></object>
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kDyJN7qQETA" frameborder="0" allowfullscreen></iframe>
+      
+    </main>
+    <footer>
+      <address>Firstname
+                Lastname
+                mailing address
+                email address
+      </address>
+      <small>copyright</small>
+    </footer>
+    <script src='nameofjsfile.js'></script>
   </body>
 </html>
