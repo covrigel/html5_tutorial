@@ -49,7 +49,7 @@ function init(){
     context.fillRect(200, 220, 100, 100);
 
     // creating round gradient
-    var radGrad = createRadialGradient(275, 250, 5, 290, 260, 100);
+    var radGrad = context.createRadialGradient(300, 300, 5, 290, 260, 100);
     radGrad.addColorStop(0, "#F19CBB");
     radGrad.addColorStop(0.3, "#9F2B68");
     radGrad.addColorStop(0.6, "#FF033E");
